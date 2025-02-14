@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #190b1f;
+}
+
+#spline-container {
+    position: fixed;
+    /* Keeps it in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    /* Ensures it's behind everything */
+}
+
+h2 {
+    @apply text-xl md:text-4xl
+}
+
+p {
+    @apply text-xl tracking-tight leading-relaxed
+}
+
+span {
+    @apply text-purple-600
+}
+
+.shiny-effect {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
+}
+
+.bg-primary-color {
+    @apply bg-purple-600
+}
